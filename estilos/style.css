@@ -10,28 +10,30 @@
 
 */
 
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     background-color: #b4f966;
     height: 100vh;
     width: 100vw;
 }
-main{
+
+main {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
-section#login{
+
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     background-color: white;
     overflow: hidden;
     width: 250px;
@@ -40,9 +42,10 @@ section#login{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.568);
     transition: width 1s, height 1s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
-section#login > div#imagem{
+section#login>div#imagem {
     display: block;
     background: #B4F966 url(../imagens/pexels-justyna-serafin-10401968\ \(1\).jpg) no-repeat;
     background-size: cover;
@@ -50,16 +53,98 @@ section#login > div#imagem{
     background-position: left bottom;
 }
 
-section#login > div#formulario{
+section#login>div#formulario {
     display: block;
     padding: 10px;
-    
+
 }
 
-div#formulario > h1{
+div#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-div#formulario > p {
+
+div#formulario>p {
     font-size: 0.8em;
+}
+
+form div.campo label{
+    display: none;
+}
+
+div.campo span{
+    color: #46780D;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo input{
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border: 0px solid #46780D;
+    border-radius: 6px;
+    padding: 4px;
+    overflow: hidden;
+    transform: translateY(-11px);
+
+}
+
+div.campo input:focus-within{
+    background-color: rgba(234, 252, 234, 0.315);
+}
+form div.campo{
+    background-color: #b4f966;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    border: 1px solid #46780D;
+}
+
+form>input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40PX;
+    background-color: #577831;
+    color: wheat;
+    font-weight: 500;
+    border-radius: 5PX;
+    border: none;
+
+}
+form>input[type=submit]:hover{
+    background-color: #4e880c;
+    cursor: pointer;
+}
+
+form  a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+    margin-top: 5px;
+    color:wheat;
+    font-weight: 500;
+    background-color: #577831;
+    border-radius: 5PX;
+    text-decoration: none;
+}
+
+form  a.botao:hover{
+    background-color: #4e880c;
+    cursor: pointer;
+}
+
+form  a.botao span{
+    display: block;
+    font-size: 0.8em;
+    font-size: 1em;
+    padding: 2px;
 }
