@@ -66,6 +66,7 @@ div#formulario>h1 {
 
 div#formulario>p {
     font-size: 0.8em;
+    margin-bottom: 10px;
 }
 
 form div.campo label{
@@ -93,7 +94,7 @@ div.campo input{
 }
 
 div.campo input:focus-within{
-    background-color: rgba(234, 252, 234, 0.315);
+    border: 0px solid #46780D;
 }
 form div.campo{
     background-color: #b4f966;
